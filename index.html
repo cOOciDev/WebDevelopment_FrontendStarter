@@ -4,29 +4,116 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Design</title>
-        <script src="js/include.js" defer></script>
+        <meta name="description" content="Personal portfolio of a web developer">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+        <meta name="author" content="Your Name">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <div>
+        <!-- <div>
             <h1> Hello World </h1>
             <p>im Learning Web Development</p>
         </div>
 
-        <img src="./images/tree models mesh.PNG" alt="test image" />
+        <img src="./images/tree models mesh.PNG" alt="test image" /> -->
 
-        <h1>Contact Me</h1>
-<form>
-  <label for="name">Your Name:</label><br>
-  <input type="text" id="name" name="name"><br><br>
 
-  <label for="email">Your Email:</label><br>
-  <input type="email" id="email" name="email"><br><br>
-
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message" rows="5"></textarea><br><br>
-
-  <input type="submit" value="Send">
-</form>
+        
+        <header>
+            <h1>Hi, I'm <mark>[Your Name]</mark></h1>
+            <p>Web Developer | Designer | Creator</p>
+            <nav>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+        
+          <main>
+            <section id="about">
+              <h2>About Me</h2>
+              <p><strong>I am a passionate web developer</strong> learning HTML, CSS, and JavaScript. <em>I love building simple and creative websites.</em></p>
+              <details>
+                <summary>My Background</summary>
+                <p>I started learning web development in 2025 and have created several beginner-friendly projects.</p>
+              </details>
+              <blockquote cite="https://developer.mozilla.org">HTML is the skeleton of all websites.</blockquote>
+              <abbr title="HyperText Markup Language">HTML</abbr>
+              <address>
+                Based in Web City, Internet<br>
+                Email: <a href="mailto:you@example.com">you@example.com</a>
+              </address>
+            </section>
+        
+            <section id="projects">
+              <h2>Projects</h2>
+              <article>
+                <h3>Project 1</h3>
+                <p>A basic website created using HTML and CSS.</p>
+                <figure>
+                  <img src="project1.png" alt="Screenshot of Project 1" width="300">
+                  <figcaption>Simple HTML & CSS website</figcaption>
+                </figure>
+              </article>
+              <article>
+                <h3>Project 2</h3>
+                <p>An interactive to-do list app using JavaScript.</p>
+                <pre><code>const task = "Learn HTML";
+        console.log(task);</code></pre>
+              </article>
+            </section>
+        
+            <section id="media">
+              <h2>Media Examples</h2>
+              <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+              </audio>
+              <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <iframe src="https://example.com" title="Example IFrame" width="300" height="200"></iframe>
+            </section>
+        
+            <section id="contact">
+              <h2>Contact Me</h2>
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <fieldset>
+                  <legend>Preferred Contact Method</legend>
+                  <input type="radio" id="emailRadio" name="contact" value="email" checked>
+                  <label for="emailRadio">Email</label>
+                  <input type="radio" id="phoneRadio" name="contact" value="phone">
+                  <label for="phoneRadio">Phone</label>
+                </fieldset>
+        
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label>
+        
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+              </form>
+            </section>
+          </main>
+        
+          <footer>
+            <hr>
+            <p>&copy; <time datetime="2025">2025</time> [Your Name]. All rights reserved.</p>
+            <progress value="70" max="100"></progress>
+            <meter value="0.6">60%</meter>
+          </footer>
     </body>
 </html>
