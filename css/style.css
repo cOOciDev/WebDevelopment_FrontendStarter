@@ -1,0 +1,46 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* Header & Nav */
+header,
+footer {
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+body.dark header,
+body.dark footer {
+  background-color: #1e1e1e;
+}
+
+.profile-info {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button#themeToggle {
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
