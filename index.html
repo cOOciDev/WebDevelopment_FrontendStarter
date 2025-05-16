@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Home | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/include.js" defer></script>
-</head>
-<body>
-  <div data-include="header.html"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/include.js" defer></script>
+  </head>
+  <body>
+    <div data-include="header.html"></div>
 
-  <main>
-    <h2>Welcome to My Portfolio</h2>
-    <p>This is the homepage.</p>
-  </main>
+    <main class="container">
+      <section class="hero section">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Crafting modern websites with creativity and precision.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+          </div>
+        </div>
+      </section>
 
-  <div data-include="footer.html"></div>
-</body>
+      <section class="section highlights">
+        <h2>Featured Projects</h2>
+
+        <article class="project">
+          <h3>Project 1: Simple HTML/CSS Site</h3>
+          <p>A clean, responsive layout built with HTML and CSS.</p>
+          <img
+            src="media/project1.PNG"
+            alt="Project 1 screenshot"
+            width="300"
+          />
+        </article>
+
+        <article class="project">
+          <h3>Project 2: JavaScript To-Do App</h3>
+          <p>An interactive to-do list built using JavaScript.</p>
+          <pre><code>const task = "Learn HTML";
+            console.log(task);</code></pre>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Why Choose Me?</h2>
+        <ul>
+          <li>Fast and responsive websites</li>
+          <li>Clean, maintainable code</li>
+          <li>Creative design with attention to detail</li>
+          <li>Continually learning and improving</li>
+        </ul>
+      </section>
+    </main>
+
+    <div data-include="footer.html"></div>
+  </body>
 </html>

@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>projects | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/include.js" defer></script>
-</head>
-<body>
-  <div data-include="header.html"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/include.js" defer></script>
+  </head>
+  <body>
+    <div data-include="header.html"></div>
 
-  <main>
-    <h2>Welcome to My Portfolio</h2>
-    <p>This is the Projectspage.</p>
-  </main>
+    <main class="container">
+      <section class="section">
+        <h1>My Projects</h1>
+        <p>
+          Below are some of the personal and practice projects I've worked on
+          while learning and developing my skills as a web developer.
+        </p>
 
-  <div data-include="footer.html"></div>
-</body>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h2>Simple HTML/CSS Site</h2>
+            <p>
+              This is a responsive static site built using HTML5 and modern CSS
+              practices.
+            </p>
+            <img src="media/project1.PNG" alt="Simple HTML CSS site" />
+            <a href="#" class="btn">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h2>JavaScript To-Do App</h2>
+            <p>
+              An interactive to-do list built with JavaScript, local storage,
+              and DOM manipulation.
+            </p>
+            <img src="media/project1.PNG" alt="JavaScript to-do app" />
+            <a href="#" class="btn">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h2>Responsive Portfolio Layout</h2>
+            <p>
+              A multi-page layout with dark/light theme toggle and reusable
+              components.
+            </p>
+            <img src="media/project1.PNG" alt="Responsive portfolio project" />
+            <a href="#" class="btn">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h2>Media Gallery Page</h2>
+            <p>
+              Showcases audio, video, and iframe embedding with styled controls
+              and accessibility features.
+            </p>
+            <img src="media/project1.PNG" alt="Media page project" />
+            <a href="media.html" class="btn">View Media</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer.html"></div>
+  </body>
 </html>

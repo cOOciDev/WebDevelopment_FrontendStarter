@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Home | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/include.js" defer></script>
-</head>
-<body>
-  <div data-include="header.html"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/include.js" defer></script>
+  </head>
+  <body>
+    <div data-include="header.html"></div>
 
-  <main>
-    <h2>Welcome to My Portfolio</h2>
-    <p>This is the About page.</p>
-  </main>
+    <main class="container">
+      <section class="section">
+        <h2>About Me</h2>
+        <p>
+          <strong>I’m a passionate web developer</strong> focusing on crafting
+          beautiful and functional web experiences. I specialize in HTML, CSS,
+          and JavaScript, and enjoy transforming creative ideas into real,
+          working websites.
+        </p>
 
-  <div data-include="footer.html"></div>
-</body>
+        <p>
+          <em
+            >Whether I’m designing a portfolio site or coding an interactive
+            app, I aim to deliver clean and responsive code that works across
+            all devices.</em
+          >
+        </p>
+
+        <details>
+          <summary>My Journey</summary>
+          <p>
+            I started learning web development in 2020 through online courses
+            and hands-on projects. Since then, I’ve built various beginner and
+            intermediate-level websites and applications to grow my skills.
+          </p>
+        </details>
+
+        <blockquote cite="https://developer.mozilla.org">
+          “HTML is the foundation of every web page you use. Learn it well and
+          everything builds from there.”
+        </blockquote>
+
+        <address>
+          Based in Web City, Internet<br />
+          Email:
+          <a href="mailto:cooci.ebrahimi@gmail.com">cooci.ebrahimi@gmail.com</a>
+        </address>
+
+        <div class="skills">
+          <h3>Skills & Technologies</h3>
+          <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript & ES6+</li>
+            <li>Responsive Web Design</li>
+            <li>Git & GitHub</li>
+            <li>Basic UX/UI Principles</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="footer.html"></div>
+  </body>
 </html>
