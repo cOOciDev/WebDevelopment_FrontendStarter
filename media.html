@@ -6,6 +6,7 @@
     <title>Media | Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/include.js" defer></script>
+    <script src="js/audio.js"></script>
   </head>
   <body>
     <div data-include="header.html"></div>
@@ -16,27 +17,30 @@
 
         <div class="media-section">
           <h3>Audio Sample</h3>
-          <audio controls>
+          <audio controls preload="auto">
             <source src="media/snowfall.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
+            <!-- <source src="media/file_example.ogg" type="audio/ogg" /> -->
+            <source src="./media/file_example.wav" type="audio/wav" />
           </audio>
+
+          <!-- <div class="audio-player">
+            <audio id="audio" src="media/snowfall.mp3"></audio>
+
+            <button id="playBtn" class="play">&#9654;</button>
+
+            <div class="progress-container" id="progressContainer">
+              <div class="progress" id="progress"></div>
+            </div>
+
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+          </div> -->
         </div>
 
         <div class="media-section">
           <h3>Video Sample</h3>
 
-          <div class="video-container">
-            <iframe
-              src="https://youtu.be/O5O3yK8DJCc"
-              title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-
           <video width="480" height="320" controls>
-            <source src="media/video.mp4" type="video/mp4" />
+            <source src="./media/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
