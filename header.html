@@ -1,33 +1,35 @@
 <header>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
   <div class="header-bg">
     <div class="profile-info">
-      <img src="./media/profpic.png" alt="prof picture">
+      <img src="./media/profpic.png" alt="Profile Picture" />
 
       <div>
-        <h1>" Hi, I'm Sorush</mark> "</h1>
-        <p> <mark>Web & Game  Developer </mark></p>
-        <br/>
+        <h1>Hi, I'm Sorush</h1>
+        <p>
+          <mark>Web & Game Developer</mark>
+          <button id="themeToggle" aria-label="Toggle Theme">
+            <i class="fas fa-sun"></i>
+            <!-- icon will switch dynamically -->
+          </button>
+        </p>
       </div>
-
-<!--  
-      <hr/>
-      <br/> -->
-
-      
     </div>
 
     <nav>
-      <button id="themeToggle">Toggle Theme</button>
-
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="media.html">Media</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-
     </nav>
   </div>
 
-  </header>
+  <script src="./js/theme.js"></script>
+</header>
