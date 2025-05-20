@@ -183,6 +183,10 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
+.footer-Logo {
+  height: 3rem;
+  padding-left: 1rem;
+}
 /* ================================
   Contact Form Styling
 ================================== */
